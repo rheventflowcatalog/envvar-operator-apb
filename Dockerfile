@@ -1,6 +1,7 @@
 FROM ansibleplaybookbundle/apb-base
 
 LABEL "com.redhat.apb.spec"=\
+<<<<<<< HEAD
 "dmVyc2lvbjogMS4wCm5hbWU6IGVudi12YXIKZGVzY3JpcHRpb246IEVudmlyb25tZW50IFZhcmlh\
 YmxlIE9wZXJhdG9yCmJpbmRhYmxlOiBGYWxzZQphc3luYzogb3B0aW9uYWwKbWV0YWRhdGE6CiAg\
 ZGlzcGxheU5hbWU6IEVudmlyb25tZW50IFZhcmlhYmxlIE9wZXJhdG9yCiAgbG9uZ0Rlc2NyaXB0\
@@ -15,6 +16,18 @@ biBVc2VyCiAgICAgIHR5cGU6IHN0cmluZwogICAgICByZXF1aXJlZDogdHJ1ZQogICAgLSBuYW1l\
 OiBhZG1pbl9wYXNzd29yZAogICAgICB0aXRsZTogT3BlbnNoaWZ0IEFkbWluIFBhc3N3b3JkCiAg\
 ICAgIHR5cGU6IHN0cmluZwogICAgICBkaXNwbGF5X3R5cGU6IHBhc3N3b3JkCiAgICAgIHJlcXVp\
 cmVkOiB0cnVlCg=="
+=======
+"dmVyc2lvbjogMS4wCm5hbWU6IGVudnZhci1vcGVyYXRvcgpkZXNjcmlwdGlvbjogIlRoZSBPcGVy\
+YXRvciBpbml0aWFsaXNlcyBjb250YWluZXIgRW52aXJvbm1lbnQgVmFyaWFibGVzIGZyb20gQ29u\
+ZmlnTWFwcyIKYmluZGFibGU6IEZhbHNlCmFzeW5jOiBvcHRpb25hbAptZXRhZGF0YToKICBkaXNw\
+bGF5TmFtZTogRW52aXJvbm1lbnQgVmFyaWFibGUgT3BlcmF0b3IKIyAgbG9uZ0Rlc2NyaXB0aW9u\
+OgogIGltYWdlVXJsOiAiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3Nqd29vZG1h\
+bi9lbnYtdmFyLWFwYi9vcGVyYXRvci9pY29uLnN2Zz9zYW5pdGl6ZT10cnVlIgogIHByb3ZpZGVy\
+RGlzcGxheU5hbWU6ICJSZWQgSGF0LCBJbmMuIgpwbGFuczoKICAtIG5hbWU6IGRlZmF1bHQKICAg\
+IGRlc2NyaXB0aW9uOiBUaGlzIHBsYW4gZGVwbG95cyB0aGUgRW52aXJvbWVudCBWYXJpYWJsZSBv\
+cGVyYXRvcgogICAgZnJlZTogVHJ1ZQogICAgbWV0YWRhdGE6IHt9CiAgICBwYXJhbWV0ZXJzOiBb\
+XQo="
+>>>>>>> 6f5edc5... misc development and cleaning
 
 COPY playbooks /opt/apb/actions
 COPY roles /opt/ansible/roles

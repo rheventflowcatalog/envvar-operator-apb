@@ -1,16 +1,25 @@
 version: 1.0
+<<<<<<< HEAD
 name: env-var
 description: Environment Variable Operator
+=======
+name: envvar-operator
+description: "The Operator initialises container Environment Variables from ConfigMaps"
+>>>>>>> 6f5edc5... misc development and cleaning
 bindable: False
 async: optional
 metadata:
   displayName: Environment Variable Operator
+<<<<<<< HEAD
   longDescription: "Keep the payload of ConfigMaps syncronised with container Environment Variables"
   imageUrl: "https://avatars2.githubusercontent.com/u/32076828?s=200&v=4"
+=======
+  imageUrl: "https://raw.githubusercontent.com/sjwoodman/env-var-apb/operator/icon.svg?sanitize=true"
+>>>>>>> 6f5edc5... misc development and cleaning
   providerDisplayName: "Red Hat, Inc."
 plans:
   - name: default
-    description: This default plan deploys the enviroment variable operator
+    description: This plan deploys the Enviroment Variable operator
     free: True
     metadata: {}
     parameters:
