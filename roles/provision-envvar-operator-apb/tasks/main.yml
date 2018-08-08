@@ -1,3 +1,6 @@
+- name: Login As Super User
+  command: "oc login -u {{ admin_user }} -p {{ admin_password }}"
+
 - name: create deployment config
   k8s_extensions_v1beta1_deployment:
    name: envvar-operator
@@ -15,3 +18,6 @@
      ports:
      - container_port: 8081
        protocol: TCP
+
+- name: Add cluster-admin policy for namespace
+  command: "oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:{{ namespace }}:default"       

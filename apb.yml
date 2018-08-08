@@ -1,11 +1,11 @@
 version: 1.0
-name: event-gateway
+name: env-var
 description: Environment Variable Operator
 bindable: False
 async: optional
 metadata:
   displayName: Environment Variable Operator
-  longDescription: "Keep the payload of Config Maps syncronised with container Environmnet Variables"
+  longDescription: "Keep the payload of ConfigMaps syncronised with container Environment Variables"
   imageUrl: "https://avatars2.githubusercontent.com/u/32076828?s=200&v=4"
   providerDisplayName: "Red Hat, Inc."
 plans:
@@ -13,4 +13,13 @@ plans:
     description: This default plan deploys the enviroment variable operator
     free: True
     metadata: {}
-    parameters: []
+    parameters:
+    - name: admin_user
+      title: Openshift Admin User
+      type: string
+      required: true
+    - name: admin_password
+      title: Openshift Admin Password
+      type: string
+      display_type: password
+      required: true
