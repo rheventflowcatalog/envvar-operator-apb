@@ -12,7 +12,8 @@
      app: envvar-operator
    containers:
    - env:
-     image: docker.io/streamzi/environment-variable-operator:latest # replace with your application image
+     image: docker.io/streamzi/environment-variable-operator:latest
+     imagePullPolicy: IfNotPresent
      name: http-source
      ports:
      - container_port: 8081
